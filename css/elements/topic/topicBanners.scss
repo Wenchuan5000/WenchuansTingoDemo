@@ -1,0 +1,51 @@
+.topicBanners {
+  white-space: nowrap;
+  justify-content: flex-start;
+  overflow-y: scroll;
+
+  &> .banner {
+    display: inline-block;
+    width: 196px;
+    height: 64px;
+    margin-left: 8px;
+    background-color: $ink-paleL-hex;
+    border: 1px solid $ink-paleL;
+    border-radius: 8px;
+
+    &:first-child {
+      margin-left: $contentMargin;
+    }
+
+    .left {
+      height: 100%;
+      &> .name {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        margin: 8px;
+        color: $ink-greyD-hex;
+      }
+
+      &> .caption {
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 14px;
+        position: absolute;
+        left: 8px;
+        bottom: 8px;
+        color: $ink-greyD-hex;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 12px; height: 12px;
+          background-image: url(media/icons/portrait-chest.png);
+          background-size: cover;
+          opacity: 16%;
+          vertical-align: middle;
+          margin-top: -2px;
+        }
+      }
+    }
+  }
+}
