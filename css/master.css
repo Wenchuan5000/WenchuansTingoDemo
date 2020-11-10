@@ -63,103 +63,28 @@ body {
   font-family: "PingFang SC", -apple-system, BlinkMacSystemFont, PingFang SC, "Apple Color Emoji", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
   color: #333333; }
 
-html, body {
-  height: 100%;
-  margin: 0px;
-  padding: 0px; }
+body.uiPreview {
+  background-color: #fafafa; }
 
-.displayUI {
-  background-color: #FAFAFA;
-  position: relative; }
-  .displayUI * {
-    position: relative; }
-  .displayUI .topicBanners {
-    white-space: nowrap;
-    justify-content: flex-start;
-    overflow-y: scroll; }
-    .displayUI .topicBanners > .banner {
-      display: inline-block;
-      width: 196px;
-      height: 64px;
-      margin-left: 8px;
-      background-color: #FAFAFA;
-      border: 1px solid rgba(0, 0, 0, 0.02);
-      border-radius: 8px; }
-      .displayUI .topicBanners > .banner:first-child {
-        margin-left: 16px; }
-      .displayUI .topicBanners > .banner .left {
-        height: 100%; }
-        .displayUI .topicBanners > .banner .left > .name {
-          font-size: 12px;
-          font-weight: 500;
-          line-height: 16px;
-          margin: 8px;
-          color: #707070; }
-        .displayUI .topicBanners > .banner .left > .caption {
-          font-size: 10px;
-          font-weight: 500;
-          line-height: 14px;
-          position: absolute;
-          left: 8px;
-          bottom: 8px;
-          color: #707070; }
-          .displayUI .topicBanners > .banner .left > .caption::before {
-            content: "";
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-            background-image: url(media/icons/portrait-chest.png);
-            background-size: cover;
-            opacity: 16%;
-            vertical-align: middle;
-            margin-top: -2px; }
-  .displayUI .UIScreen {
-    position: relative;
+#iPhoneX {
+  display: block;
+  width: 375px;
+  height: 812px;
+  background-color: white;
+  border-radius: 32px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden; }
+  #iPhoneX .topBar {
     width: 100%;
-    height: 100%; }
-    .displayUI .UIScreen [class*="device-"] {
-      overflow: hidden; }
-      .displayUI .UIScreen [class*="device-"][class*="-iPhoneX"] {
-        width: 375px;
-        height: 812px;
-        background-color: white;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        top: 50%;
-        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.04), 0px 2px 8px 0px rgba(0, 0, 0, 0.02); }
-        .displayUI .UIScreen [class*="device-"][class*="-iPhoneX"] nav[class*="top-"][class*="standard"] {
-          height: 88px;
-          background-color: white;
-          overflow: hidden; }
-          .displayUI .UIScreen [class*="device-"][class*="-iPhoneX"] nav[class*="top-"][class*="standard"] + .scrollY {
-            height: calc(100% - 88px); }
-          .displayUI .UIScreen [class*="device-"][class*="-iPhoneX"] nav[class*="top-"][class*="standard"] .statueBar {
-            width: 100%;
-            height: 44px;
-            background-size: cover; }
-          .displayUI .UIScreen [class*="device-"][class*="-iPhoneX"] nav[class*="top-"][class*="standard"][class*="-light"] .statueBar {
-            background-image: url("media/iPhoneXStatueBar-light.png"); }
-          .displayUI .UIScreen [class*="device-"][class*="-iPhoneX"] nav[class*="top-"][class*="standard"][class*="-dark"] .statueBar {
-            background-image: url(media/iPhoneXStatueBar-dark.png); }
-          .displayUI .UIScreen [class*="device-"][class*="-iPhoneX"] nav[class*="top-"][class*="standard"] .bar {
-            display: grid;
-            grid-template-columns: auto auto auto; }
-            .displayUI .UIScreen [class*="device-"][class*="-iPhoneX"] nav[class*="top-"][class*="standard"] .bar .mid {
-              line-height: 44px;
-              font-size: 16px;
-              font-weight: 500; }
-              .displayUI .UIScreen [class*="device-"][class*="-iPhoneX"] nav[class*="top-"][class*="standard"] .bar .mid.tab-3 {
-                display: flex;
-                justify-content: center;
-                text-align: center; }
-                .displayUI .UIScreen [class*="device-"][class*="-iPhoneX"] nav[class*="top-"][class*="standard"] .bar .mid.tab-3 a {
-                  display: block;
-                  color: inherit;
-                  margin: 0 20px; }
-                  .displayUI .UIScreen [class*="device-"][class*="-iPhoneX"] nav[class*="top-"][class*="standard"] .bar .mid.tab-3 a.current {
-                    color: #33C3C2;
-                    box-shadow: inset 0 -2px 0 0 #33C3C2; }
-        .displayUI .UIScreen [class*="device-"][class*="-iPhoneX"] .scrollY {
-          overflow-x: hidden;
-          overflow-y: scroll; }
+    position: fixed;
+    z-index: 100000; }
+  #iPhoneX .screen {
+    overflow-x: hidden;
+    overflow-y: scroll; }
+  #iPhoneX .topBar + .screen {
+    margin-top: 88px;
+    height: calc(100% - 88px); }
