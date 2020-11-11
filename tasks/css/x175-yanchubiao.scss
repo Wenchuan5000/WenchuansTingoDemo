@@ -1,6 +1,65 @@
 $brandColor: #33C3C2;
 
 .x175-yanchubiao {
+  .ww-entrance {
+    background-color: #fafafa;
+    position: fixed;
+    z-index: 0;
+    width: 100%; height: 100%;
+
+    .ww-section {
+      margin-top: 8px;
+
+      .ww-selectPortrait {
+
+
+        img {
+          position: absolute;
+          right: 16px;
+          top: 16px;
+          width: 44px;
+          height: 44px;
+          border-radius: 100px;
+          object-fit: cover;
+        }
+
+        p {
+          line-height: 76px !important;
+        }
+      }
+
+      .ww-li {
+        position: relative;
+        padding: 0 16px;
+        padding-right: 0;
+        background-color: white;
+
+        &:not(:last-child) {
+          p {
+            box-shadow: inset 0 -1px 0 rgba(black, 0.04);
+          }
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 56px;
+        }
+
+        .ww-rangle {
+          display: block;
+          width: 24px; height: 24px;
+          position: absolute;
+          right: 16px;
+          top: 16px;
+          background-image: url(media/icons/rangle.png);
+          background-size: 16px;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+
   .date {
     background-color: #f5f5f5;
     padding: 12px 16px;
@@ -152,6 +211,7 @@ $brandColor: #33C3C2;
     }
   }
 
+
   .songLists {
     margin-bottom: 120px;
 
@@ -186,6 +246,7 @@ $brandColor: #33C3C2;
     }
   }
 
+
   nav.ww-bottom {
     position: fixed;
     bottom: 0; left: 0;
@@ -211,13 +272,31 @@ $brandColor: #33C3C2;
       }
     }
 
-    .ww-btn {
-      background-color: $brandColor;
-      padding: 0 24px;
-      border-radius: 100px;
-      color: white;
+    .ww-btns {
+      display: flex;
+
+      .ww-btn {
+        padding: 0 20px;
+        border-radius: 100px;
+
+
+        &:last-child {
+          margin-left: 16px;
+        }
+
+        &.ww-main {
+          background-color: $brandColor;
+          color: white;
+        }
+
+        &.ww-secondary {
+          color: rgba(black, 0.64);
+          background-color: rgba(black, 0.08);
+        }
+      }
     }
   }
+
 
   .ww-toast {
     position: fixed;
@@ -238,4 +317,110 @@ $brandColor: #33C3C2;
     }
   }
 
+
+  .ww-tanchuangContainer {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(black, 0.56);
+
+    .ww-tanchuang {
+      position: absolute;
+      width: calc(100% - 64px);
+      // height: 330px;
+      background-color: white;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      border-radius: 16px;
+      overflow: hidden;
+
+      $innerTopNavHeight: 64px;
+      $innerDownNavHeight: 64px;
+
+      .ww-innerNavTop {
+        position: absolute;
+        top: 0;
+        // height: $innerTopNavHeight;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 1px 0 rgba(black, 0.08);
+
+
+        p {
+          text-align: center;
+          line-height: $innerTopNavHeight;
+          font-weight: 500;
+        }
+
+        // img {
+        //   width: 24px;
+        //   height: 24px;
+        //   position: absolute;
+        //   top: 8px;
+        //   right: 8px;
+        // }
+      }
+
+      .ww-scrollY {
+        // height: 100%;
+        // overflow-y: scroll;
+        margin-top: $innerTopNavHeight + 32px;
+        margin-bottom: $innerDownNavHeight + 32px;
+
+        .ww-input {
+          // flex: 1 1 20px;
+          background-color: #f5f5f5;
+          margin: 0 24px;
+          padding: 12px 16px;
+          border-radius: 100px;
+
+          // display: flex;
+          justify-content: space-between;
+
+          margin-top: 24px;
+
+          input {
+            border: none;
+            background: none;
+            line-height: 24px;
+            font-size: 16px;
+            padding: 1px 0;
+
+            width: 100%;
+
+            text-align: center;
+
+            &::placeholder {
+              color: rgba(black, 0.32);
+            }
+          }
+        }
+      }
+
+      .ww-innerNavDown {
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 -1px 0 rgba(black, 0.08);
+        display: flex;
+        justify-content: space-between;
+
+        .btn {
+          flex: 1 1 50%;
+          text-align: center;
+          line-height: $innerDownNavHeight;
+          color: rgba(black, 0.48);
+          font-weight: 500;
+
+          &:last-child {
+            box-shadow: -1px 0 0 rgba(black, 0.08);
+            color: $brandColor;
+          }
+        }
+      }
+    }
+  }
 }

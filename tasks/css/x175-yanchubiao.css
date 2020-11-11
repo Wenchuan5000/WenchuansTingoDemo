@@ -1,4 +1,43 @@
 @charset "UTF-8";
+.x175-yanchubiao .ww-entrance {
+  background-color: #fafafa;
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: 100%; }
+  .x175-yanchubiao .ww-entrance .ww-section {
+    margin-top: 8px; }
+    .x175-yanchubiao .ww-entrance .ww-section .ww-selectPortrait img {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      width: 44px;
+      height: 44px;
+      border-radius: 100px;
+      object-fit: cover; }
+    .x175-yanchubiao .ww-entrance .ww-section .ww-selectPortrait p {
+      line-height: 76px !important; }
+    .x175-yanchubiao .ww-entrance .ww-section .ww-li {
+      position: relative;
+      padding: 0 16px;
+      padding-right: 0;
+      background-color: white; }
+      .x175-yanchubiao .ww-entrance .ww-section .ww-li:not(:last-child) p {
+        box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.04); }
+      .x175-yanchubiao .ww-entrance .ww-section .ww-li p {
+        font-size: 16px;
+        line-height: 56px; }
+      .x175-yanchubiao .ww-entrance .ww-section .ww-li .ww-rangle {
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        background-image: url(media/icons/rangle.png);
+        background-size: 16px;
+        background-repeat: no-repeat;
+        background-position: center; }
 .x175-yanchubiao .date {
   background-color: #f5f5f5;
   padding: 12px 16px;
@@ -153,11 +192,19 @@
   .x175-yanchubiao nav.ww-bottom .ww-selected span {
     color: #33C3C2;
     font-weight: bold; }
-  .x175-yanchubiao nav.ww-bottom .ww-btn {
-    background-color: #33C3C2;
-    padding: 0 24px;
-    border-radius: 100px;
-    color: white; }
+  .x175-yanchubiao nav.ww-bottom .ww-btns {
+    display: flex; }
+    .x175-yanchubiao nav.ww-bottom .ww-btns .ww-btn {
+      padding: 0 20px;
+      border-radius: 100px; }
+      .x175-yanchubiao nav.ww-bottom .ww-btns .ww-btn:last-child {
+        margin-left: 16px; }
+      .x175-yanchubiao nav.ww-bottom .ww-btns .ww-btn.ww-main {
+        background-color: #33C3C2;
+        color: white; }
+      .x175-yanchubiao nav.ww-bottom .ww-btns .ww-btn.ww-secondary {
+        color: rgba(0, 0, 0, 0.64);
+        background-color: rgba(0, 0, 0, 0.08); }
 .x175-yanchubiao .ww-toast {
   position: fixed;
   width: 100%;
@@ -175,3 +222,65 @@
     background-color: white;
     padding: 24px;
     border-radius: 16px; }
+.x175-yanchubiao .ww-tanchuangContainer {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.56); }
+  .x175-yanchubiao .ww-tanchuangContainer .ww-tanchuang {
+    position: absolute;
+    width: calc(100% - 64px);
+    background-color: white;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 16px;
+    overflow: hidden; }
+    .x175-yanchubiao .ww-tanchuangContainer .ww-tanchuang .ww-innerNavTop {
+      position: absolute;
+      top: 0;
+      background-color: white;
+      width: 100%;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08); }
+      .x175-yanchubiao .ww-tanchuangContainer .ww-tanchuang .ww-innerNavTop p {
+        text-align: center;
+        line-height: 64px;
+        font-weight: 500; }
+    .x175-yanchubiao .ww-tanchuangContainer .ww-tanchuang .ww-scrollY {
+      margin-top: 96px;
+      margin-bottom: 96px; }
+      .x175-yanchubiao .ww-tanchuangContainer .ww-tanchuang .ww-scrollY .ww-input {
+        background-color: #f5f5f5;
+        margin: 0 24px;
+        padding: 12px 16px;
+        border-radius: 100px;
+        justify-content: space-between;
+        margin-top: 24px; }
+        .x175-yanchubiao .ww-tanchuangContainer .ww-tanchuang .ww-scrollY .ww-input input {
+          border: none;
+          background: none;
+          line-height: 24px;
+          font-size: 16px;
+          padding: 1px 0;
+          width: 100%;
+          text-align: center; }
+          .x175-yanchubiao .ww-tanchuangContainer .ww-tanchuang .ww-scrollY .ww-input input::placeholder {
+            color: rgba(0, 0, 0, 0.32); }
+    .x175-yanchubiao .ww-tanchuangContainer .ww-tanchuang .ww-innerNavDown {
+      position: absolute;
+      bottom: 0;
+      background-color: white;
+      width: 100%;
+      box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.08);
+      display: flex;
+      justify-content: space-between; }
+      .x175-yanchubiao .ww-tanchuangContainer .ww-tanchuang .ww-innerNavDown .btn {
+        flex: 1 1 50%;
+        text-align: center;
+        line-height: 64px;
+        color: rgba(0, 0, 0, 0.48);
+        font-weight: 500; }
+        .x175-yanchubiao .ww-tanchuangContainer .ww-tanchuang .ww-innerNavDown .btn:last-child {
+          box-shadow: -1px 0 0 rgba(0, 0, 0, 0.08);
+          color: #33C3C2; }
