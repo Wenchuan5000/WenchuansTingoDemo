@@ -6,34 +6,32 @@
   width: 100%;
   height: 100%; }
   .x175-yanchubiao .ww-entrance .ww-section {
-    margin-top: 8px; }
+    margin-top: 8px;
+    background-color: white; }
     .x175-yanchubiao .ww-entrance .ww-section .ww-selectPortrait img {
-      position: absolute;
-      right: 16px;
-      top: 16px;
       width: 44px;
       height: 44px;
       border-radius: 100px;
       object-fit: cover; }
     .x175-yanchubiao .ww-entrance .ww-section .ww-selectPortrait p {
-      line-height: 76px !important; }
+      line-height: 44px !important; }
     .x175-yanchubiao .ww-entrance .ww-section .ww-li {
-      position: relative;
-      padding: 0 16px;
-      padding-right: 0;
-      background-color: white; }
-      .x175-yanchubiao .ww-entrance .ww-section .ww-li:not(:last-child) p {
+      padding: 16px;
+      padding-left: 0;
+      margin-left: 16px;
+      background-color: white;
+      display: flex;
+      justify-content: space-between; }
+      .x175-yanchubiao .ww-entrance .ww-section .ww-li:not(:last-child) {
         box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.04); }
       .x175-yanchubiao .ww-entrance .ww-section .ww-li p {
         font-size: 16px;
-        line-height: 56px; }
+        line-height: 24px; }
       .x175-yanchubiao .ww-entrance .ww-section .ww-li .ww-rangle {
         display: block;
         width: 24px;
         height: 24px;
-        position: absolute;
-        right: 16px;
-        top: 16px;
+        content: "";
         background-image: url(media/icons/rangle.png);
         background-size: 16px;
         background-repeat: no-repeat;
