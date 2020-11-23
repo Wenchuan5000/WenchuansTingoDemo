@@ -1172,8 +1172,9 @@ div.title {
       width: 200px;
       height: 200px;
       border-radius: 1000px;
-      object-fit: cover;
-      animation: cdSpinning 60s infinite linear; }
+      object-fit: cover; }
+      .shareAudio .cover img.spinning {
+        animation: cdSpinning 60s infinite linear; }
 @keyframes cdSpinning {
   0% {
     transform: rotate(0deg); }
@@ -1187,8 +1188,9 @@ div.title {
       left: 50%;
       top: 50%;
       border-radius: 1000px;
-      background-color: rgba(51, 195, 194, 0.08);
-      animation: cdWave 3s infinite; }
+      background-color: rgba(51, 195, 194, 0.08); }
+      .shareAudio .cover .cdWave.waving {
+        animation: cdWave 3s infinite; }
 @keyframes cdWave {
   0% {
     width: 200px;
