@@ -1156,5 +1156,95 @@ div.title {
     .shareImg[class*="grid-"][class*="-3"] {
       grid-template-columns: auto auto auto; }
 
+.shareAudio {
+  margin: 32px 0; }
+  .shareAudio .cover {
+    position: relative;
+    margin: 0 auto;
+    background-image: url(media/cdBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .shareAudio .cover img {
+      position: relative;
+      z-index: 2;
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 1000px;
+      object-fit: cover;
+      animation: cdSpinning 60s infinite linear; }
+@keyframes cdSpinning {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+    .shareAudio .cover .cdWave {
+      width: 240px;
+      height: 240px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      border-radius: 1000px;
+      background-color: rgba(51, 195, 194, 0.08);
+      animation: cdWave 3s infinite; }
+@keyframes cdWave {
+  0% {
+    width: 200px;
+    height: 200px; }
+  50% {
+    width: 240px;
+    height: 240px; }
+  100% {
+    width: 200px;
+    height: 200px; } }
+  .shareAudio .mediaBox {
+    background-color: rgba(0, 0, 0, 0.04);
+    padding: 16px;
+    border-radius: 16px;
+    margin: 0 16px;
+    margin-top: 32px; }
+    .shareAudio .mediaBox .soundTimeLine {
+      height: 4px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.08);
+      border-radius: 1000px; }
+      .shareAudio .mediaBox .soundTimeLine .hasRunned {
+        position: relative;
+        background-color: #33C3C2;
+        border-radius: 1000px;
+        height: 100%;
+        width: 100px; }
+        .shareAudio .mediaBox .soundTimeLine .hasRunned .runningDot {
+          position: absolute;
+          background-color: #33C3C2;
+          width: 16px;
+          height: 16px;
+          border: 4px solid white;
+          border-radius: 1000px;
+          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
+          transform: translate(50%, -50%);
+          top: 50%;
+          right: 0; }
+    .shareAudio .mediaBox .media-btns {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px; }
+      .shareAudio .mediaBox .media-btns .playAndPause {
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: 32px;
+        background-color: #33C3C2;
+        width: 32px;
+        height: 32px; }
+        .shareAudio .mediaBox .media-btns .playAndPause.start {
+          -webkit-mask-image: url(media/icons/media-start.svg); }
+        .shareAudio .mediaBox .media-btns .playAndPause.pause {
+          -webkit-mask-image: url(media/icons/media-pause.svg); }
+      .shareAudio .mediaBox .media-btns .timeWent, .shareAudio .mediaBox .media-btns .timeLeft {
+        line-height: 32px;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.24); }
+
 .end {
   height: 123px; }

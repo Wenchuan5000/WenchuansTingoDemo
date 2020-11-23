@@ -1,3 +1,139 @@
 .shareAudio {
-  
+  margin: 32px 0;
+
+  .cover {
+    position: relative;
+    margin: 0 auto;
+
+    background-image: url(media/cdBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    img {
+      position: relative;
+      z-index: 2;
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 1000px;
+      object-fit: cover;
+      animation: cdSpinning 60s infinite linear;
+
+      @keyframes cdSpinning {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+
+    .cdWave {
+      width: 240px;
+      height: 240px;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%; top: 50%;
+      border-radius: 1000px;
+
+      background-color: rgba($brandColor, 0.08);
+
+      animation: cdWave 3s infinite;
+
+      @keyframes cdWave {
+        0% {
+          width: 200px; height: 200px;
+        }
+
+        50% {
+
+          width: 240px; height: 240px;
+        }
+
+        100% {
+          width: 200px; height: 200px;
+        }
+      }
+    }
+  }
+
+
+
+  .mediaBox {
+    background-color: rgba(black, 0.04);
+
+    padding: 16px;
+    border-radius: 16px;
+    margin: 0 16px;
+    margin-top: 32px;
+
+    .soundTimeLine {
+      height: 4px;
+      width: 100%;
+      background-color: rgba(black, 0.08);
+      border-radius: 1000px;
+      // overflow: hidden;
+
+      .hasRunned {
+        position: relative;
+        background-color: $brandColor;
+        border-radius: 1000px;
+        height: 100%;
+        width: 100px;
+
+        .runningDot {
+          position: absolute;
+          background-color: $brandColor;
+          width: 16px; height: 16px;
+          border: 4px solid white;
+          border-radius: 1000px;
+          box-shadow: 0 1px 8px rgba(black, 0.08),
+                      0 1px 4px rgba(black, 0.04);
+          transform: translate(50%, -50%);
+          top: 50%;
+          right: 0;
+        }
+      }
+    }
+
+    .media-btns {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px;
+
+      .playAndPause {
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: 32px;
+        background-color: $brandColor;
+        width: 32px; height: 32px;
+
+        &.start {
+          -webkit-mask-image: url(media/icons/media-start.svg);
+        }
+
+        &.pause {
+          -webkit-mask-image: url(media/icons/media-pause.svg);
+        }
+      }
+
+      .timeWent, .timeLeft {
+        line-height: 32px;
+        font-size: 14px;
+        color: rgba(black, 0.24);
+      }
+    }
+  }
+}
+
+
+@keyframes runningDot {
+
+}
+
+@keyframes cdsHeartBeat {
+
 }
