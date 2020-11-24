@@ -864,39 +864,33 @@ img {
   header.contentHeader .cover {
     height: 400px;
     object-fit: cover; } }
-
-div.title {
+header.contentHeader div.title {
   max-width: 720px;
   padding: 0 16px;
   margin: 0 auto;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
-  @media only screen and (max-width: 752px) {
-    div.title {
-      max-width: 100%;
-      padding: 0 1.5rem; } }
-  div.title h1.title {
+  header.contentHeader div.title h1.title {
     font-size: 2rem;
     font-weight: 500;
     line-height: 1.75;
     margin-top: 0;
     margin-bottom: 1rem; }
     @media only screen and (max-width: 414px) {
-      div.title h1.title {
+      header.contentHeader div.title h1.title {
         font-size: 1.5rem;
         margin-bottom: 0.5rem; } }
-  div.title p.caption {
+  header.contentHeader div.title p.caption {
     font-weight: 500;
     font-size: 0.875rem;
     line-height: 2;
     color: rgba(0, 0, 0, 0.24); }
-    div.title p.caption a {
+    header.contentHeader div.title p.caption a {
       color: #33C3C2; }
     @media only screen and (max-width: 414px) {
-      div.title p.caption {
+      header.contentHeader div.title p.caption {
         font-size: 0.75rem; } }
-
-.cover {
+header.contentHeader .cover {
   margin: 0;
   width: 100%; }
 
@@ -1248,5 +1242,388 @@ div.title {
         font-size: 14px;
         color: rgba(0, 0, 0, 0.24); }
 
+.shareArtist .cover {
+  position: relative;
+  z-index: 0;
+  padding-top: 100%;
+  position: relative; }
+  .shareArtist .cover .imgFrog {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.32) 71%);
+    top: 0;
+    left: 0; }
+  .shareArtist .cover img {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .shareArtist .cover .title {
+    padding: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white !important;
+    z-index: 10;
+    width: 100%; }
+    .shareArtist .cover .title .who {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px; }
+      .shareArtist .cover .title .who .name {
+        font-weight: 500;
+        display: block;
+        line-height: 32px;
+        font-size: 24px; }
+        .shareArtist .cover .title .who .name i {
+          position: relative;
+          margin-left: 8px;
+          width: 18px;
+          height: 18px;
+          background-color: rgba(255, 255, 255, 0.24);
+          border-radius: 1000px; }
+          .shareArtist .cover .title .who .name i::before {
+            content: "";
+            display: block;
+            -webkit-mask-image: url("media/icons/24/info.svg");
+            width: 18px;
+            height: 18px;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-size: 100%;
+            background-color: white; }
+      .shareArtist .cover .title .who .btn {
+        display: block;
+        color: rgba(0, 0, 0, 0.8);
+        background-color: white;
+        padding: 0 16px;
+        border-radius: 1000px;
+        display: flex;
+        justify-content: space-between; }
+        .shareArtist .cover .title .who .btn i {
+          -webkit-mask-image: url("media/icons/24/plus.svg");
+          background-color: rgba(0, 0, 0, 0.8);
+          margin-top: 8px;
+          margin-left: -6px;
+          margin-right: 4px; }
+        .shareArtist .cover .title .who .btn span {
+          line-height: 16px;
+          margin-top: 7px;
+          font-weight: 500; }
+    .shareArtist .cover .title .howMany {
+      line-height: 14px;
+      font-size: 14px;
+      margin-top: 16px;
+      font-weight: normal; }
+      .shareArtist .cover .title .howMany .fans {
+        margin-right: 8px; }
+      .shareArtist .cover .title .howMany .lives {
+        padding-left: 8px;
+        border-left: 1px solid rgba(255, 255, 255, 0.4); }
+    .shareArtist .cover .title .howNice {
+      line-height: 18px;
+      font-size: 14px;
+      margin-top: 12px; }
+      .shareArtist .cover .title .howNice i {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-image: url("media/icons/24/badge/GV@3x.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: text-bottom;
+        margin-right: 4px; }
+.shareArtist .wishBoard {
+  height: 70px;
+  margin: 24px 16px;
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  overflow: hidden;
+  padding-left: 12px;
+  padding-right: 16px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between; }
+  .shareArtist .wishBoard .left .title {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 4px; }
+    .shareArtist .wishBoard .left .title .rank {
+      background-color: #33C3C2;
+      color: white;
+      font-size: 11px;
+      line-height: 20px;
+      border-radius: 1000px;
+      padding: 0 8px;
+      margin-right: 8px; }
+    .shareArtist .wishBoard .left .title .songName {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 500; }
+  .shareArtist .wishBoard .left .fromWhere {
+    font-size: 12px;
+    line-height: 20px;
+    color: #707070; }
+  .shareArtist .wishBoard .right {
+    height: 100%; }
+    .shareArtist .wishBoard .right i {
+      height: 24px;
+      width: 24px;
+      -webkit-mask-image: url("media/icons/24/angle-right.svg");
+      margin-top: 8px;
+      background-color: rgba(0, 0, 0, 0.8); }
+.shareArtist .timeTable {
+  width: 100%;
+  background-color: #def5f5;
+  padding-bottom: 24px;
+  overflow: hidden; }
+  .shareArtist .timeTable .scrollX .card {
+    width: calc(100% - 32px);
+    margin-left: 16px;
+    margin-top: 0;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04); }
+    .shareArtist .timeTable .scrollX .card .imgFrame {
+      position: relative;
+      padding-top: 56.25%; }
+      .shareArtist .timeTable .scrollX .card .imgFrame img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+    .shareArtist .timeTable .scrollX .card .info {
+      padding: 12px 16px; }
+      .shareArtist .timeTable .scrollX .card .info .title {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500; }
+      .shareArtist .timeTable .scrollX .card .info .time {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 4px; }
+        .shareArtist .timeTable .scrollX .card .info .time i {
+          -webkit-mask-image: url("media/icons/24/clock.svg");
+          background-color: rgba(0, 0, 0, 0.24);
+          margin-top: 2px;
+          margin-right: 4px; }
+        .shareArtist .timeTable .scrollX .card .info .time p {
+          font-size: 12px;
+          line-height: 20px; }
+          .shareArtist .timeTable .scrollX .card .info .time p span {
+            margin-right: 8px; }
+        .shareArtist .timeTable .scrollX .card .info .time .tag {
+          font-size: 10px;
+          line-height: 18px;
+          height: 17px;
+          margin-top: 1px;
+          font-weight: 500;
+          color: white;
+          background-color: #33C3C2;
+          padding: 0 10px;
+          border-radius: 100px;
+          margin-left: 4px; }
+      .shareArtist .timeTable .scrollX .card .info .location {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 4px; }
+        .shareArtist .timeTable .scrollX .card .info .location i {
+          -webkit-mask-image: url("media/icons/24/location.svg");
+          background-color: rgba(0, 0, 0, 0.24);
+          margin-top: 1px;
+          margin-right: 4px; }
+        .shareArtist .timeTable .scrollX .card .info .location p {
+          font-size: 12px;
+          line-height: 20px;
+          color: rgba(0, 0, 0, 0.32); }
+.shareArtist .editorsPick {
+  padding-bottom: 16px;
+  border-bottom: 8px solid #f5f5f5; }
+  .shareArtist .editorsPick .scrollX .card {
+    position: relative;
+    width: calc(100% - 32px);
+    margin-left: 16px;
+    display: grid;
+    grid-template-columns: 94px auto;
+    grid-column-gap: 12px;
+    margin-top: 16px; }
+    .shareArtist .editorsPick .scrollX .card .imgFrame {
+      position: relative;
+      width: 94px;
+      height: 94px; }
+      .shareArtist .editorsPick .scrollX .card .imgFrame img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        object-fit: cover; }
+    .shareArtist .editorsPick .scrollX .card .subTitle {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 20px;
+      color: #adadad; }
+    .shareArtist .editorsPick .scrollX .card .articleTitle {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      margin-top: 2px;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
+    .shareArtist .editorsPick .scrollX .card .brief {
+      position: absolute;
+      bottom: 0;
+      font-size: 12px;
+      line-height: 20px;
+      color: #adadad;
+      margin-top: 8px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
+.shareArtist .moments {
+  margin-bottom: 80px; }
+  .shareArtist .moments .item {
+    padding: 16px;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-column-gap: 8px;
+    border-bottom: 1px solid #f5f5f5; }
+    .shareArtist .moments .item .userAvata {
+      width: 40px;
+      height: 40px; }
+      .shareArtist .moments .item .userAvata img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 100px; }
+    .shareArtist .moments .item .content .userName {
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 500; }
+      .shareArtist .moments .item .content .userName .updateTime {
+        font-size: 12px;
+        color: #adadad; }
+        .shareArtist .moments .item .content .userName .updateTime:before {
+          content: " · "; }
+    .shareArtist .moments .item .content .mood {
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 4px;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden; }
+    .shareArtist .moments .item .content .wadai {
+      margin-top: 4px;
+      color: #33C3C2;
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 500; }
+      .shareArtist .moments .item .content .wadai:before {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: 100%;
+        background-color: #33C3C2;
+        -webkit-mask-image: url("media/icons/24/moment.svg");
+        margin-right: 2px;
+        margin-top: -3px;
+        vertical-align: middle; }
+    .shareArtist .moments .item .content .imgGrid {
+      margin-top: 8px;
+      display: grid; }
+      .shareArtist .moments .item .content .imgGrid.four {
+        grid-template-columns: 50% 50%;
+        grid-gap: 2px;
+        width: calc(100% - 2px); }
+      .shareArtist .moments .item .content .imgGrid.nine {
+        grid-template-columns: 33.333% 33.333% 33.333%;
+        grid-gap: 2px;
+        width: calc(100% - 4px); }
+      .shareArtist .moments .item .content .imgGrid:not(.one) .imgFrame {
+        position: relative;
+        padding-top: 100%; }
+        .shareArtist .moments .item .content .imgGrid:not(.one) .imgFrame img {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          object-fit: cover; }
+    .shareArtist .moments .item .content .commentAndSth {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px;
+      margin-bottom: 16px; }
+      .shareArtist .moments .item .content .commentAndSth .theThree {
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+        grid-column-gap: 12px;
+        font-size: 12px;
+        line-height: 16px;
+        color: #707070; }
+        .shareArtist .moments .item .content .commentAndSth .theThree .like:before, .shareArtist .moments .item .content .commentAndSth .theThree .save:before, .shareArtist .moments .item .content .commentAndSth .theThree .comment:before {
+          content: "";
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          -webkit-mask-repeat: no-repeat;
+          -webkit-mask-size: 100%;
+          background-color: rgba(0, 0, 0, 0.24);
+          margin-right: 2px;
+          margin-top: -3px;
+          vertical-align: middle; }
+        .shareArtist .moments .item .content .commentAndSth .theThree .like:before {
+          -webkit-mask-image: url("media/icons/24/heart-filled.svg"); }
+        .shareArtist .moments .item .content .commentAndSth .theThree .save:before {
+          -webkit-mask-image: url("media/icons/24/save-filled.svg"); }
+        .shareArtist .moments .item .content .commentAndSth .theThree .comment:before {
+          -webkit-mask-image: url("media/icons/24/speechBubble.svg"); }
+
+.sectionHead {
+  padding-top: 16px;
+  margin: 16px;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04); }
+  .sectionHead .title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500; }
+    .sectionHead .title .caption {
+      font-size: 12px;
+      line-height: 20px;
+      color: #adadad;
+      margin-left: 8px; }
+  .sectionHead .go {
+    line-height: 24px;
+    font-size: 14px;
+    color: #33C3C2;
+    font-weight: 500; }
+
 .end {
   height: 123px; }
+
+.tingoIcon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  background-color: red; }
+  .tingoIcon.plus {
+    -webkit-mask-image: url("media/icons/24/plus.svg"); }

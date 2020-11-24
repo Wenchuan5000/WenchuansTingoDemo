@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/24/scanQrCode</title>
+    <g id="icon/24/scanQrCode" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" fill="#0091FF" x="1" y="11" width="22" height="2" rx="1"></rect>
+        <rect id="Rectangle" fill="#0091FF" fill-rule="nonzero" x="6" y="6" width="3" height="3"></rect>
+        <rect id="Rectangle-Copy-2" fill="#0091FF" fill-rule="nonzero" x="15" y="6" width="3" height="3"></rect>
+        <rect id="Rectangle-Copy" fill="#0091FF" fill-rule="nonzero" x="6" y="15" width="3" height="3"></rect>
+        <path d="M15,2 L17,2 L17,6 C17,6.55228475 17.4477153,7 18,7 L22,7 L22,7 L22,9 L18,9 C16.3431458,9 15,7.65685425 15,6 L15,2 L15,2 Z" id="Path-3-Copy-3" fill="#0091FF" fill-rule="nonzero" transform="translate(18.500000, 5.500000) scale(-1, -1) translate(-18.500000, -5.500000) "></path>
+        <path d="M2,2 L4,2 L4,6 C4,6.55228475 4.44771525,7 5,7 L9,7 L9,7 L9,9 L5,9 C3.34314575,9 2,7.65685425 2,6 L2,2 L2,2 Z" id="Path-3-Copy-5" fill="#0091FF" fill-rule="nonzero" transform="translate(5.500000, 5.500000) scale(1, -1) translate(-5.500000, -5.500000) "></path>
+        <path d="M15,15 L17,15 L17,19 C17,19.5522847 17.4477153,20 18,20 L22,20 L22,20 L22,22 L18,22 C16.3431458,22 15,20.6568542 15,19 L15,15 L15,15 Z" id="Path-3-Copy-4" fill="#0091FF" fill-rule="nonzero" transform="translate(18.500000, 18.500000) scale(-1, -1) rotate(-270.000000) translate(-18.500000, -18.500000) "></path>
+        <path d="M2,15 L4,15 L4,19 C4,19.5522847 4.44771525,20 5,20 L9,20 L9,20 L9,22 L5,22 C3.34314575,22 2,20.6568542 2,19 L2,15 L2,15 Z" id="Path-3-Copy-6" fill="#0091FF" fill-rule="nonzero" transform="translate(5.500000, 18.500000) scale(1, -1) rotate(-270.000000) translate(-5.500000, -18.500000) "></path>
+    </g>
+</svg>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/24/pencil</title>
+    <g id="icon/24/pencil" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M15,19 L15,20 L5,20 L5,19 L15,19 Z M19,19 L19,20 L17,20 L17,19 L19,19 Z M15.6128994,4.62391817 L15.7071068,4.70710678 L18.2928932,7.29289322 C18.6533772,7.65337718 18.6811067,8.22060824 18.3760818,8.61289944 L18.2928932,8.70710678 L17,9.99921356 L15,8 L14,9 L16,10.9992136 L9,18 L5,18 L5,14 L14.2928932,4.70710678 C14.6533772,4.34662282 15.2206082,4.31889328 15.6128994,4.62391817 Z" id="Mask" fill="#0091FF"></path>
+    </g>
+</svg>

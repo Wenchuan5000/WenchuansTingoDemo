@@ -1,3 +1,4 @@
+
 $brandColor: #33C3C2;
 
 @import "preset/0-preset";
@@ -8,4 +9,18 @@ $brandColor: #33C3C2;
 
 .end {
   height: 123px;
+}
+
+
+.tingoIcon {
+  display: inline-block;
+  width: 16px; height: 16px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  background-color: red;
+
+
+  &.plus {
+    -webkit-mask-image: url("media/icons/24/plus.svg");
+  }
 }

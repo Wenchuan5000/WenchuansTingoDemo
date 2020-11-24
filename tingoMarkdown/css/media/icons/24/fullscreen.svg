@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/24/fullscreen</title>
+    <g id="icon/24/fullscreen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M20,13 L20,20 L18,20 L13,20 L13,18 L16.585,18 L13.2928932,14.7071068 L14.7071068,13.2928932 L18,16.585 L18,13 L20,13 Z M11,4 L11,6 L7.414,5.999 L10.7071068,9.29289322 L9.29289322,10.7071068 L6,7.415 L6,11 L4,11 L4,4 L11,4 Z" id="Combined-Shape" fill="#0091FF"></path>
+    </g>
+</svg>

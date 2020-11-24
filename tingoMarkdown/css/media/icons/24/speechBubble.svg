@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/24/speechBubble</title>
+    <g id="icon/24/speechBubble" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12,4 C16.9705627,4 21,7.35786438 21,11.5 C21,15.6421356 16.9705627,19 12,19 C10.9201262,19 9.88467272,18.8415114 8.92530789,18.5509243 L6,20.5 L5.99995993,17.0902364 C4.15873511,15.7169359 3,13.7212334 3,11.5 C3,7.35786438 7.02943725,4 12,4 Z" id="Mask" fill="#0091FF"></path>
+    </g>
+</svg>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/24/piaoquan</title>
+    <g id="icon/24/piaoquan" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M20,6 C20,7.1045695 20.8954305,8 22,8 L22,16 C20.8954305,16 20,16.8954305 20,18 L4,18 C4,16.8954305 3.1045695,16 2,16 L2,8 C3.1045695,8 4,7.1045695 4,6 L20,6 Z M6,14.5 L5,14.5 L5,16.5 L6,16.5 L6,14.5 Z M19,14.5 L18,14.5 L18,16.5 L19,16.5 L19,14.5 Z M14,13 L8,13 L8,15 L14,15 L14,13 Z M6,11 L5,11 L5,13 L6,13 L6,11 Z M19,11 L18,11 L18,13 L19,13 L19,11 Z M16,9 L8,9 L8,11 L16,11 L16,9 Z M6,7.5 L5,7.5 L5,9.5 L6,9.5 L6,7.5 Z M19,7.5 L18,7.5 L18,9.5 L19,9.5 L19,7.5 Z" id="Shape" fill="#333333"></path>
+    </g>
+</svg>
