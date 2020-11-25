@@ -1,0 +1,186 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: inherit; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, img {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, label, select, button, textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  box-shadow: none; }
+
+input:focus {
+  outline: 0; }
+
+html {
+  font-size: 16px; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif"; }
+
+code,
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: 'Source Code Pro', monospace; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  color: #333333; }
+
+body {
+  overflow-x: hidden; }
+
+img {
+  vertical-align: middle;
+  max-width: 100%; }
+
+.share {
+  padding-bottom: 80px;
+  color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.04); }
+  .share header {
+    background-color: white;
+    position: relative; }
+    .share header figure .imgFrog {
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.24) 60%);
+      top: 0;
+      left: 0; }
+    .share header figure .imgFrame {
+      position: relative;
+      padding-top: 75%; }
+      .share header figure .imgFrame img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .share header figure figcaption {
+      margin: 0 16px;
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+      color: white; }
+      .share header figure figcaption h1 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 1em;
+        margin-bottom: 16px; }
+      .share header figure figcaption p {
+        font-size: 14px;
+        margin-bottom: 16px; }
+  .share pre {
+    word-wrap: inherit;
+    white-space: pre-wrap; }
+  .share .mb20 {
+    padding: 24px 16px;
+    background-color: white;
+    margin-bottom: 8px; }
+    .share .mb20 *:last-child {
+      margin-bottom: 0; }
+  .share p, .share pre {
+    line-height: 1.75;
+    margin: 8px 0; }
+  .share .share-title {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 1em;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    font-weight: 500; }
+    .share .share-title::before {
+      content: "";
+      display: inline-block;
+      background-color: #33C3C2;
+      width: 4px;
+      height: 17px;
+      margin-top: 5px;
+      margin-right: 8px;
+      vertical-align: top; }
+  .share .share-tag {
+    font-size: 14px;
+    line-height: 22px; }
+    .share .share-tag span {
+      display: inline-block;
+      background-color: #33C3C2;
+      color: white;
+      padding: 0 12px;
+      margin-right: 8px;
+      border-radius: 100px;
+      margin-bottom: 12px; }
+  .share .share-tag1 {
+    text-align: center;
+    margin: 1.5rem 0;
+    margin-top: 12px;
+    color: #33C3C2;
+    font-weight: 500;
+    border: 1px dashed rgba(51, 195, 194, 0.24);
+    border-radius: 8px;
+    padding: 16px; }
+  .share .oh {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 8px;
+    font-size: 14px;
+    line-height: 1.75;
+    grid-row-gap: 0.5em;
+    color: rgba(0, 0, 0, 0.32);
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin: 24px 0; }
+    .share .oh li {
+      width: 100% !important; }
