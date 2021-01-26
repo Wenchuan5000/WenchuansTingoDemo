@@ -1,0 +1,233 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  vertical-align: center; }
+
+* {
+  box-sizing: border-box; }
+  *:focus {
+    outline: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  vertical-align: middle; }
+
+html {
+  font-size: 16px; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "PingFang SC", -apple-system, BlinkMacSystemFont, PingFang SC, "Apple Color Emoji", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+  color: #333333; }
+
+.messageBox .message {
+  margin: 0 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: 64px calc(100% - 64px - 8px);
+  grid-column-gap: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04); }
+  .messageBox .message:active {
+    transform: scale(1.025);
+    transition: transform 0.4s; }
+  .messageBox .message .portraitFrame {
+    position: relative;
+    margin-top: 4px;
+    height: 64px; }
+    .messageBox .message .portraitFrame .portrait {
+      width: 100%;
+      height: 100%;
+      background-image: url("https://bit.ly/3a2rLSB");
+      background-size: cover;
+      overflow: hidden;
+      border-radius: 1000px;
+      border: 1px solid rgba(0, 0, 0, 0.04); }
+    .messageBox .message .portraitFrame .identity {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-image: url("media/icons/star.png");
+      background-size: cover; }
+  .messageBox .message .info .title {
+    display: flex;
+    justify-content: space-between; }
+    .messageBox .message .info .title .name {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .messageBox .message .info .title .date {
+      font-size: 12px;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 0.32); }
+  .messageBox .message .info .messageText {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 22px; }
+
+.menu {
+  background-color: #fafafa; }
+.menu .menuSection {
+  margin-top: 12px;
+  background-color: white;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04), 0 -1px 0 rgba(0, 0, 0, 0.04); }
+  .menu .menuSection .item {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    padding-right: 16px;
+    font-size: 18px;
+    line-height: 26px;
+    padding-top: 16px;
+    padding-bottom: 16px; }
+    .menu .menuSection .item:not(:last-child) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.04); }
+    .menu .menuSection .item .lineHightWithPortrait {
+      line-height: 64px; }
+    .menu .menuSection .item .portrait {
+      width: 64px;
+      height: 64px;
+      background-color: rgba(0, 0, 0, 0.04);
+      border-radius: 1000px;
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      background-image: url("https://bit.ly/3a2rLSB");
+      background-size: cover;
+      overflow: hidden; }
+    .menu .menuSection .item .into {
+      width: 16px;
+      height: 16px;
+      background-image: url(media/icons/rangle.png);
+      background-size: cover;
+      margin-top: 5px; }
+    .menu .menuSection .item:active {
+      transform: scale(1.025);
+      transition: transform 0.4s; }
+
+.tableOfSongs {
+  width: calc(100% - 32px);
+  position: relative;
+  text-align: left;
+  margin: 16px;
+  border-top: 1px solid #f5f5f5;
+  border-left: 1px solid #f5f5f5; }
+.tableOfSongs td, .tableOfSongs th {
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: 1px solid #f5f5f5;
+  border-right: 1px solid #f5f5f5;
+  padding: 8px; }
+.tableOfSongs tr {
+  display: grid;
+  grid-template-columns: 40% 36% 24%; }
+.tableOfSongs th {
+  background-color: #fafafa; }
+.tableOfSongs td {
+  position: relative; }
+  .tableOfSongs td:first-child {
+    font-weight: 500; }
+  .tableOfSongs td:last-child {
+    color: #33C3C2; }
+  .tableOfSongs td .counts {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; }
+.tableOfSongs .enlisted {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.56); }
+
+.enlistSongs {
+  margin: 16px; }
+.enlistSongs li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  padding: 16px 0; }
+  .enlistSongs li .left {
+    margin-right: 12px; }
+    .enlistSongs li .left .name {
+      font-weight: 500;
+      line-height: 24px; }
+    .enlistSongs li .left .caption {
+      margin-top: 2px;
+      font-size: 14px;
+      line-height: 22px; }
+      .enlistSongs li .left .caption span {
+        color: #33C3C2;
+        font-weight: 500;
+        margin-right: 2px; }
+  .enlistSongs li .right {
+    flex-shrink: 0; }
+    .enlistSongs li .right .btn {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 32px;
+      padding: 0 12px;
+      border-radius: 1000px;
+      margin-top: 8px; }
+      .enlistSongs li .right .btn.add {
+        background-color: #33C3C2;
+        color: white; }
+        .enlistSongs li .right .btn.add::before {
+          content: "加入点歌单"; }
+      .enlistSongs li .right .btn.added {
+        background-color: rgba(0, 0, 0, 0.04);
+        color: rgba(0, 0, 0, 0.24); }
+        .enlistSongs li .right .btn.added::before {
+          content: "已添加"; }
+
+.uiCaption {
+  padding: 16px;
+  background-color: #f44336;
+  color: white;
+  font-size: 14px;
+  line-height: 22px; }

@@ -1,0 +1,96 @@
+& {
+
+}
+
+.message {
+  $potraitSize: 64px;
+
+  margin: 0 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  // display: flex;
+  // justify-content: flex-start;
+  display: grid;
+  grid-template-columns: $potraitSize calc(100% - 64px - 8px);
+  grid-column-gap: 8px;
+
+  border-bottom: 1px solid rgba(black, 0.04);
+
+  &:active {
+    transform: scale(1.025);
+    transition: transform 0.4s;
+  }
+
+
+
+  .portraitFrame {
+    position: relative;
+    margin-top: 4px;
+    height: $potraitSize;
+
+    .portrait {
+      width: 100%;
+      height: 100%;
+      background-image: url("https://bit.ly/3a2rLSB");
+      background-size: cover;
+      overflow: hidden;
+      border-radius: 1000px;
+      border: 1px solid rgba(black, 0.04);
+    }
+
+
+    .identity {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 0; bottom: 0;
+      background-image: url("media/icons/star.png");
+      background-size: cover;
+    }
+  }
+
+  .info {
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      // width: 100%;
+
+      .name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .date {
+        font-size: 12px;
+        line-height: 24px;
+        color: rgba(black, 0.32);
+      }
+    }
+
+    .messageText {
+      margin-top: 4px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

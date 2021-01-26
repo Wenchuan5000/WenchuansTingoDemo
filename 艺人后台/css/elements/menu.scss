@@ -1,0 +1,55 @@
+& {
+  background-color: #fafafa;
+}
+
+.menuSection {
+  margin-top: 12px;
+  background-color: white;
+  box-shadow: 0 1px 0 rgba(black, 0.04),
+              0 -1px 0 rgba(black, 0.04);
+
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    padding-right: 16px;
+    font-size: 18px;
+    line-height: 26px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(black, 0.04);
+    }
+
+    .lineHightWithPortrait {
+      line-height: 64px;
+    }
+
+    .portrait {
+      width: 64px;
+      height: 64px;
+      background-color: rgba(black, 0.04);
+      border-radius: 1000px;
+      border: 1px solid rgba(black, 0.04);
+
+      background-image: url("https://bit.ly/3a2rLSB");
+      background-size: cover;
+      overflow: hidden;
+    }
+
+    .into {
+      width: 16px;
+      height: 16px;
+      background-image: url(media/icons/rangle.png);
+      background-size: cover;
+      margin-top: 5px;
+    }
+
+    &:active {
+      transform: scale(1.025);
+      transition: transform 0.4s;
+    }
+  }
+}
