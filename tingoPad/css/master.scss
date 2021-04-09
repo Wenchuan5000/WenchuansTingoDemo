@@ -1,0 +1,159 @@
+@import "reset";
+
+:root {
+  --b-color: #28B3AE;
+  --nav-height: 64px;
+  --artist-size: 40px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "PingFang SC", -apple-system, BlinkMacSystemFont, PingFang SC, "Apple Color Emoji", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+
+  color: white;
+  background-color: black;
+}
+
+
+
+nav.top {
+  z-index: 10000;
+  height: var(--nav-height);
+  width: 100%;
+  display: block;
+  background-color: black;
+  position: fixed;
+  top: 0; left: 0;
+  box-shadow: 0 2px 0 rgba(white, 0.16);
+  display: flex;
+  justify-content: space-between;
+
+  .artist {
+    display: flex;
+    margin-top: calc((var(--nav-height) - var(--artist-size))/2);
+    margin-left: 16px;
+
+    img {
+      width: var(--artist-size);
+      height: var(--artist-size);
+      border-radius: 1000px;
+      object-fit: cover;
+    }
+
+    .name {
+      line-height: var(--artist-size);
+      font-size: 20px;
+      margin-left: 8px;
+      font-weight: 500;
+      color: var(--b-color);
+    }
+  }
+
+  .markRead {
+    height: var(--artist-size);
+    line-height: var(--artist-size);
+    background-color: var(--b-color);
+    margin-top: calc((var(--nav-height) - var(--artist-size))/2);
+    padding: 0 24px;
+    margin-right: 16px;
+    border-radius: 100px;
+    color: white;
+    font-weight: 500;
+  }
+}
+
+.msBox {
+  margin-top: calc(var(--nav-height) + 16px);
+
+
+  .ms {
+    &.active {
+      border-color: var(--b-color);
+    }
+
+    max-width: 100%;
+    border: 2px solid rgba(white, 0.16);
+    margin: 16px;
+    border-radius: 16px;
+    padding: 16px;
+
+    display: flex;
+    justify-content: space-between;
+
+    --user-size: 48px;
+
+    .left {
+      display: flex;
+      justify-content: flex-start;
+      .user {
+        display: flex;
+        img {
+          width: var(--user-size);
+          height: var(--user-size);
+          border-radius: 100px;
+        }
+
+        .name {
+          line-height: var(--user-size);
+          margin-left: 8px;
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+
+      .sent {
+        display: flex;
+        justify-content: flex-start;
+        line-height: var(--user-size);
+        margin-left: 8px;
+        .hint {
+          color: rgba(white, 0.4);
+        }
+        .item {
+          margin-left: 4px;
+          font-size: 24px;
+          font-weight: 500;
+          color: yellow;
+
+          img {
+            margin-left: 4px;
+            display: inline-block;
+            height: var(--user-size);
+            width: var(--user-size);
+            object-fit: cover;
+          }
+        }
+
+        .count {
+          margin-left: 4px;
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .right {
+      .money {
+        line-height: var(--user-size);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

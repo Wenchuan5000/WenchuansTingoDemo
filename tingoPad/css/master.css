@@ -1,0 +1,161 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  vertical-align: center; }
+
+* {
+  box-sizing: border-box; }
+  *:focus {
+    outline: none; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+img {
+  vertical-align: middle; }
+
+* h1::after {
+  border: none; }
+
+:root {
+  --b-color: #28B3AE;
+  --nav-height: 64px;
+  --artist-size: 40px; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "PingFang SC", -apple-system, BlinkMacSystemFont, PingFang SC, "Apple Color Emoji", Helvetica, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+  color: white;
+  background-color: black; }
+
+nav.top {
+  z-index: 10000;
+  height: var(--nav-height);
+  width: 100%;
+  display: block;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 0 rgba(255, 255, 255, 0.16);
+  display: flex;
+  justify-content: space-between; }
+  nav.top .artist {
+    display: flex;
+    margin-top: calc((var(--nav-height) - var(--artist-size))/2);
+    margin-left: 16px; }
+    nav.top .artist img {
+      width: var(--artist-size);
+      height: var(--artist-size);
+      border-radius: 1000px;
+      object-fit: cover; }
+    nav.top .artist .name {
+      line-height: var(--artist-size);
+      font-size: 20px;
+      margin-left: 8px;
+      font-weight: 500;
+      color: var(--b-color); }
+  nav.top .markRead {
+    height: var(--artist-size);
+    line-height: var(--artist-size);
+    background-color: var(--b-color);
+    margin-top: calc((var(--nav-height) - var(--artist-size))/2);
+    padding: 0 24px;
+    margin-right: 16px;
+    border-radius: 100px;
+    color: white;
+    font-weight: 500; }
+
+.msBox {
+  margin-top: calc(var(--nav-height) + 16px); }
+  .msBox .ms {
+    max-width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.16);
+    margin: 16px;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    --user-size: 48px; }
+    .msBox .ms.active {
+      border-color: var(--b-color); }
+    .msBox .ms .left {
+      display: flex;
+      justify-content: flex-start; }
+      .msBox .ms .left .user {
+        display: flex; }
+        .msBox .ms .left .user img {
+          width: var(--user-size);
+          height: var(--user-size);
+          border-radius: 100px; }
+        .msBox .ms .left .user .name {
+          line-height: var(--user-size);
+          margin-left: 8px;
+          font-size: 18px;
+          font-weight: 500; }
+      .msBox .ms .left .sent {
+        display: flex;
+        justify-content: flex-start;
+        line-height: var(--user-size);
+        margin-left: 8px; }
+        .msBox .ms .left .sent .hint {
+          color: rgba(255, 255, 255, 0.4); }
+        .msBox .ms .left .sent .item {
+          margin-left: 4px;
+          font-size: 24px;
+          font-weight: 500;
+          color: yellow; }
+          .msBox .ms .left .sent .item img {
+            margin-left: 4px;
+            display: inline-block;
+            height: var(--user-size);
+            width: var(--user-size);
+            object-fit: cover; }
+        .msBox .ms .left .sent .count {
+          margin-left: 4px;
+          font-size: 24px;
+          font-weight: bold; }
+    .msBox .ms .right .money {
+      line-height: var(--user-size); }

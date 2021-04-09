@@ -31,20 +31,20 @@ p {
     font-size: 12px;
   }
 
-  &.tingoTopic {
-    color: $brandColor;
-    font-size: 14px;
-    font-weight: 500;
-
-    &:before {
-      content: "";
-      display: inline-block;
-      height: 16px; width: 16px;
-      background-image: url(media/icons/topic_green.png);
-      background-size: cover;
-      position: relative;
-      top: 3px;
-      margin-right: 4px;
-    }
-  }
+  // &.tingoTopic {
+  //   color: $brandColor;
+  //   font-size: 14px;
+  //   font-weight: 500;
+  //
+  //   &:before {
+  //     content: "";
+  //     display: inline-block;
+  //     height: 16px; width: 16px;
+  //     background-image: url(media/icons/topic_green.png);
+  //     background-size: cover;
+  //     position: relative;
+  //     top: 3px;
+  //     margin-right: 4px;
+  //   }
+  // }
 }
